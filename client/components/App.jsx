@@ -6,7 +6,6 @@ const App = props => {
   const circle = {
     cx: props.width / 2,
     cy: props.height / 2,
-    level: 0,
     r: 256
   }
 
