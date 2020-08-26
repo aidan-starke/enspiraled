@@ -29,6 +29,7 @@ export default class Circle extends React.Component {
         const { cx, cy, r } = this.props.circle
         const randomNumber = Math.floor(Math.random() * 10000)
         const color = getColor(randomNumber)
+        
         return (
             <g>
             <circle cx={cx} cy={cy} r={r} fill={color} onMouseOver={this.handleMouseOver} />
