@@ -33,9 +33,7 @@ export default class Circle extends React.Component {
         return (
             <g>
             <circle cx={cx} cy={cy} r={r} fill={color} onMouseOver={this.handleMouseOver} />
-            {this.state.circles.map((circle, key) => {
-              return <Circle key={key} circle={circle} />
-            })}
+            {this.state.circles.map((circle, key) => <Circle key={key} circle={circle} />)}
             </g>
         )
     }
